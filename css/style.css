@@ -1,0 +1,442 @@
+@font-face {
+	font-family: "RobotoFlex";	
+	src: local("RobotoFlex"), 
+		url("/fonts/RobotoFlex-Regular.woff"), 
+		url("/fonts/RobotoFlex-Regular.woff2");
+	font-style: normal;
+}
+
+* {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	max-width: 1440px;
+	min-width: 1200px;
+	margin: auto;
+	font-family: "RobotoFlex", sans-serif;	
+	font-size: 62.5%;
+}
+
+body {
+	width: 1200px;
+	margin: auto;
+}
+
+.btn-top {
+	display: none;
+	position: fixed;
+	bottom: 5rem;
+	right: 5rem;
+	fill: #8F8F8F;
+}
+
+.btn-top:hover {
+	fill: #0137FF;
+	stroke: white;
+	stroke-width: 1%;
+}
+
+.wrap {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.nav-wrap {
+	display: flex;
+	align-items: center;
+	margin-top: 4.2rem;
+	margin-bottom: 5.6rem;
+}
+
+.menu {
+	margin-left: 20rem;
+}
+
+
+.menu-list {
+	width: 70rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.menu-item a {
+	/* font-size: 18px; */
+	font-size: 1.8rem;
+	font-weight: 400;
+	font-style: normal;
+	color: #0040FE;
+}
+
+.menu-item::first-letter {
+	text-transform: capitalize;
+}
+
+/* .menu-item:nth-child(n+2) {
+	margin-left: 40px;
+} */
+
+.menu-item:hover {
+	text-decoration: underline;
+}
+
+.title {
+	width: 80rem;
+	font-size: 7.2rem;   /*72px*/
+	font-weight: 800;
+	line-height: 7.6rem;
+	letter-spacing: -0.03em;
+}
+
+.title-wrap {
+	display: flex;
+	margin-bottom: 3.2rem;
+}
+
+.logos-list {
+	display: flex;
+}
+
+.logo-item {
+	margin-left: -3.8rem;
+}
+
+.title-btn {
+	display: block;
+	width: 26rem;
+	height: 7.6rem;
+	font-weight: 600;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	color: white;
+	background: linear-gradient(90deg, #0137FF 0.17%, #02A9FF 100.17%);
+	border-radius: 1.6rem;
+	border: none;
+	cursor: pointer;
+	padding: 2.4rem 3rem;
+}
+
+.features {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 12rem;	
+	margin-bottom: 12rem;
+	align-items: baseline;
+}
+
+.feature {
+	width: 35.9rem;
+}
+
+.feature-title {	
+	height: 8.4rem;
+	font-weight: 800;
+	font-size: 4.4rem;
+	margin-top: 2.4rem;
+	line-height: 4.2rem;
+	margin-bottom: 2.4rem;
+}
+
+.text {
+	font-weight: 500;	
+	color: #8F8F8F;
+}
+
+.feature-text {	
+	font-size: 2.8rem;
+}
+
+.product-logo {
+	margin-top: 3.2rem;
+	margin-bottom: 3.2rem;
+}
+
+.desc {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5.6rem;
+}
+
+.desc-text {
+	width: 56rem;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	margin-right: 4rem;
+}
+
+.benefits {
+	width: 56rem;
+}
+
+.benefit-item {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	
+	position: relative;
+	min-height: 6rem;
+	padding-left: 10rem;
+}
+
+.benefit-item::before {	
+	position: absolute;
+	content: "";
+	width: 6rem;
+	height: 6rem;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+
+.benefit-item:nth-child(n+2) {
+	margin-top: 4.2rem;
+}
+
+.pyramid::before {
+	background-image: url('/img/svg/Pyramid\ 1.svg');
+}
+
+.cylinder::before {
+	background-image: url('/img/svg/Flat\ Cylinder\ 3.svg');
+}
+
+.helix::before {
+	background-image: url('/img/svg/Helix.svg');
+}
+
+.cube::before {
+	background-image: url('/img/svg/Cube\ 3.svg');
+}
+
+.architecture {
+	text-align: center;
+	margin-bottom: 12rem;
+}
+
+.architecture-title {	
+	font-weight: 800;
+	font-size: 4.4rem;
+}
+
+.architecture-text {
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	margin-top: 1.6rem;
+	margin-bottom: 5.6rem;
+}
+
+.about {
+	font-size: 2.4rem;
+}
+
+.subtitle {	
+	font-weight: 800;
+	width: 56rem;
+	margin-top: 3.2rem;
+	margin-bottom: 3.2rem;
+}
+
+.about-text {
+	display: flex;
+	justify-content: space-between;
+	line-height: 3.2rem;
+	margin-bottom: 4.8rem;
+}
+
+.about-text-left {
+	width: 56rem;
+}
+
+.about-text-right {
+	width: 56rem;
+}
+
+.about-text-left-team {
+	margin-top: 3.2rem;
+}
+
+.team-img {
+	width: 116rem;
+	height: 36.7rem;
+	margin-bottom: 5.6rem;
+}
+
+.honors {
+	margin-left: -14rem;
+	margin-right: -14rem;
+	margin-bottom: 12rem;
+	padding: 6.4rem 14rem 8rem;
+	height: 50.8rem;
+	background: linear-gradient(90deg, #0137FF 0.17%, #02A9FF 100.17%);
+}
+
+.honors-title {
+	color: #fff;
+	opacity: 0.7;
+}
+
+.honors-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.honor {	
+	width: 36rem;
+}
+
+.honor-data {
+	font-weight: 800;
+	font-size: 4.4rem;
+	line-height: 5.2rem;
+	letter-spacing: 0.03em;
+	color: #fff;
+	margin-top: 6.4rem;
+	margin-bottom: 2.4rem;
+}
+
+.honor-desc {
+	font-weight: 400;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	letter-spacing: 0.03em;
+	color: #fff;
+}
+
+.trust {
+	margin-bottom: 12rem;
+}
+
+.trust-list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3.2rem;
+}
+
+.trust-item {
+	fill: #C7C7C7;
+}
+
+.first:hover {	
+	fill: #FB2E13;
+}
+
+.second-black {
+	fill: white;
+}
+
+svg:hover .second-black {
+	fill: black;
+}
+
+svg:hover .second-yellow {
+	fill: #EDFC36;
+}
+
+svg:hover .third-black {
+	fill: black;
+}
+
+svg:hover .third-blue {
+	fill: #A1D9F7;
+}
+
+.fourth:hover {
+	fill: #1700A4;
+	stroke: #1700A4;
+}
+
+.vacancy-text {
+	margin-top: 3.2rem;
+	font-weight: 500;
+	font-size: 2.8rem;
+	line-height: 3.3rem;	
+	color: #8F8F8F;
+}
+
+.vacancy-text-link {
+	color: #0260FF;
+}
+
+.vacancy-text-link:hover {
+	text-decoration: underline;
+}
+
+.connect-with-us {
+	margin-top: 12rem;
+	margin-bottom: 12rem;
+}
+
+.connect-with-us-text {
+	margin-bottom: 3.2rem;
+	margin-top: 3.2rem;
+	font-weight: 500;
+	font-size: 2.8rem;
+	line-height: 3.3rem;
+	color: #8F8F8F;
+}
+
+.footer-text {
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.9rem;
+	color: #8F8F8F;
+	margin-bottom: 6rem;
+}
+
+@media (min-width: 1200px) {
+	
+	.btn-top {
+		display: block;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 1199px) {
+
+	html {
+		font-size: 49%;
+	}
+
+	.menu {
+		display: none;
+	}
+}
+
+/* Не готово далее!!!!!! */
+
+@media (max-width: 321px) {
+
+	html {
+		font-size: 37%;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	/* .title, .logos-list {
+		width: 300px;
+	} */
+
+	.title-wrap, .features {
+		display: block;
+	}
+
+	.feature {
+		display: flex;
+	}
+
+	.feature-wrap, .feature-title, .feature-text {
+		width: 220px;
+	}
+
+	.architecture-img {
+		width: 100rem;
+	}
+}
